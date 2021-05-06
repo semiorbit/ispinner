@@ -1,0 +1,64 @@
+{
+  "name": "@semiorbit/ispinner",
+  "version": "1.0.10",
+  "description": "A simple react spinner like iOS UIActivityIndicatorView.",
+  "main": "index.js",
+  "keywords": [
+    "ISpinner",
+    "spinner",
+    "loading",
+    "ios spinner",
+    "indicator",
+    "UIActivityIndicatorView"
+  ],
+  "author": "Ibrahim Khalil Khalbous",
+  "license": "MIT",
+  "files": [
+    "./lib"
+  ],
+  "scripts": {
+    "build": "npm run v && npm i && rollup -c",
+    "v": "npm version patch --force && cd lib && npm version patch --force",
+    "publish": "npm publish lib --access public"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.14",
+    "@babel/preset-env": "^7.13.12",
+    "@babel/preset-react": "^7.13.13",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@testing-library/jest-dom": "^5.11.10",
+    "@testing-library/react": "^11.2.6",
+    "@testing-library/user-event": "^12.8.3",
+    "babel-plugin-module-resolver": "^4.1.0",
+    "react-scripts": "4.0.3",
+    "rollup": "^2.44.0",
+    "rollup-plugin-delete": "^2.0.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-sass": "^1.2.2",
+    "sass": "^1.32.11"
+  },
+  "peerDependencies": {
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "prop-types": "^15.7.2"
+  }
+}
