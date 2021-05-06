@@ -1,9 +1,9 @@
 import React from 'react';
-import style from "./ISpinner.module.scss";
+import "./ispinner.css";
 import * as PropTypes from "prop-types";
 const ISpinner = props => {
 
-    const spinnerStyle = props.size ? {
+    const style = props.size ? {
         width: props.size.toString() + 'px',
         height: props.size.toString() + 'px'
     } : {};
@@ -14,29 +14,27 @@ const ISpinner = props => {
 
     // noinspection CheckTagEmptyBody
     return (
-        <div
-            {...props}
-            className={[
-                style.ISpinner,
-                props.animating ? style.Animating : '',
-                props.large || props.size >= 35 ? style.Large : '',
-                props.white ? style.White : style.Gray,
-                props.className
-            ].join(' ')}
-            style={spinnerStyle}
+        <div className={[
+            "ispinner",
+            props.animating ? 'animating' : '',
+            props.large || props.size >= 35 ? 'large' : '',
+            props.white ? 'white' : 'gray',
+            props.className
+        ].join(' ')}
+             style={style}
         >
-            <div className={style.ISpinnerBlade} style={bladeStyle}></div>
-            <div className={style.ISpinnerBlade} style={bladeStyle}></div>
-            <div className={style.ISpinnerBlade} style={bladeStyle}></div>
-            <div className={style.ISpinnerBlade} style={bladeStyle}></div>
-            <div className={style.ISpinnerBlade} style={bladeStyle}></div>
-            <div className={style.ISpinnerBlade} style={bladeStyle}></div>
-            <div className={style.ISpinnerBlade} style={bladeStyle}></div>
-            <div className={style.ISpinnerBlade} style={bladeStyle}></div>
-            <div className={style.ISpinnerBlade} style={bladeStyle}></div>
-            <div className={style.ISpinnerBlade} style={bladeStyle}></div>
-            <div className={style.ISpinnerBlade} style={bladeStyle}></div>
-            <div className={style.ISpinnerBlade} style={bladeStyle}></div>
+            <div className="ispinner-blade" style={bladeStyle}></div>
+            <div className="ispinner-blade" style={bladeStyle}></div>
+            <div className="ispinner-blade" style={bladeStyle}></div>
+            <div className="ispinner-blade" style={bladeStyle}></div>
+            <div className="ispinner-blade" style={bladeStyle}></div>
+            <div className="ispinner-blade" style={bladeStyle}></div>
+            <div className="ispinner-blade" style={bladeStyle}></div>
+            <div className="ispinner-blade" style={bladeStyle}></div>
+            <div className="ispinner-blade" style={bladeStyle}></div>
+            <div className="ispinner-blade" style={bladeStyle}></div>
+            <div className="ispinner-blade" style={bladeStyle}></div>
+            <div className="ispinner-blade" style={bladeStyle}></div>
         </div>
     );
 

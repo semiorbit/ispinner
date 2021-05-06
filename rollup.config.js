@@ -3,7 +3,7 @@ import external from 'rollup-plugin-peer-deps-external';
 import del from 'rollup-plugin-delete';
 import pkg from './package.json';
 import list from './modules.json';
-import sassModules from 'rollup-plugin-sass-modules'
+import css from "rollup-plugin-import-css";
 
 const defineEntryPoint = (component) => {
     const src = `src/${component}.js`;
@@ -17,11 +17,7 @@ const defineEntryPoint = (component) => {
                 exclude: 'node_modules/**'
             }),
             del({targets: [output]}),
-            sassModules({
-                include: ['**/*.scss', '**/*.sass'],
-                exclude: [],
-                options: {}
-            })
+            css()
         ],
         external: Object.keys(pkg.peerDependencies || {})
     }
