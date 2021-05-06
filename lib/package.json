@@ -1,6 +1,6 @@
 {
   "name": "@semiorbit/ispinner",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "A simple react spinner like iOS UIActivityIndicatorView.",
   "main": "index.js",
   "repository": {
@@ -16,6 +16,7 @@
     "UIActivityIndicatorView"
   ],
   "author": "Ibrahim Khalil Khalbous",
+  "email": "dev@semiorbit.com",
   "license": "MIT",
   "files": [
     "./lib"
