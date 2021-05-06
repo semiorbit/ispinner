@@ -2,7 +2,7 @@
 
 A simple react spinner like iOS UIActivityIndicatorView. Custom size and color features have been added.
 
-![iSpinner Preview](preview.jpg)
+![iSpinner Preview](https://raw.githubusercontent.com/semiorbit/ispinner/main/preview.jpg)
 
 ## Usage
 
@@ -39,7 +39,7 @@ Other properties are added to "ispinner" div element.
 
 # Preview
 
-![iSpinner Preview](preview-ispinner.png)
+![iSpinner Preview](https://raw.githubusercontent.com/semiorbit/ispinner/main/preview-ispinner.png)
 
 # License
 
