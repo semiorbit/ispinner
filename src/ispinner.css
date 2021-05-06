@@ -1,3 +1,6 @@
+/* source: https://www.cssscript.com/demo/ios-style-loading-spinner-with-pure-css-ispinner
+           https://github.com/swordray/ispinner */
+
 .ISpinner {
     position : relative;
     width    : 20px;
