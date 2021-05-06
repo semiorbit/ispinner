@@ -1,6 +1,6 @@
 # Semiorbit iSpinner
 
-A simple react spinner like iOS UIActivityIndicatorView. Custom size and color features have been added. 
+A simple react spinner like iOS UIActivityIndicatorView. Custom size and color features have been added.
 
 ![iSpinner Preview](preview.jpg)
 
@@ -36,6 +36,10 @@ animating  | boolean | true       | Animating spinner if true
 Other properties are added to "ispinner" div element.
 
 **NB.** Spinner css has been forked from this source: [Demo](https://www.cssscript.com/demo/ios-style-loading-spinner-with-pure-css-ispinner)
+
+# Preview
+
+![iSpinner Preview](preview-ispinner.png)
 
 # License
 
