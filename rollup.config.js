@@ -3,7 +3,7 @@ import external from 'rollup-plugin-peer-deps-external';
 import del from 'rollup-plugin-delete';
 import pkg from './package.json';
 import list from './modules.json';
-import css from "rollup-plugin-import-css";
+import postcss from 'rollup-plugin-postcss'
 
 const defineEntryPoint = (component) => {
     const src = `src/${component}.js`;
@@ -17,7 +17,9 @@ const defineEntryPoint = (component) => {
                 exclude: 'node_modules/**'
             }),
             del({targets: [output]}),
-            css()
+            postcss({
+                plugins: []
+            })
         ],
         external: Object.keys(pkg.peerDependencies || {})
     }
