@@ -27,7 +27,7 @@ import ISpinner from "@semiorbit/ispinner";
 
 Property   | Type    | Default Value   | Description
 -------    | ------  | ---------- | ------------
-white      | boolean  | false       | Spinner width and height
+white      | boolean  | false       | White spinner for dark background
 large      | boolean  | false       | Spinner large size "35px", normal size "20px"
 size      | number  | null       | Spinner width and height
 color      | string  | null      | Spinner color eg. "red" or "#FF0000"
