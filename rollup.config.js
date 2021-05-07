@@ -18,6 +18,9 @@ const defineEntryPoint = (component) => {
             }),
             del({targets: [output]}),
             postcss({
+                extract: false,
+                modules: true,
+                use: ['sass'],
                 plugins: []
             })
         ],

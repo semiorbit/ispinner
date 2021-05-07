@@ -1,6 +1,6 @@
 {
   "name": "@semiorbit/ispinner",
-  "version": "1.0.22",
+  "version": "1.0.23",
   "description": "A simple react spinner like iOS UIActivityIndicatorView.",
   "main": "index.js",
   "repository": {
@@ -58,7 +58,8 @@
     "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.0",
-    "postcss": "^8.2.14"
+    "postcss": "^8.2.14",
+    "sass": "^1.32.11"
   },
   "peerDependencies": {
     "react": "^17.0.2",
