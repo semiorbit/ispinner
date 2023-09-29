@@ -1,6 +1,6 @@
 {
   "name": "@semiorbit/ispinner",
-  "version": "1.0.28",
+  "version": "1.0.29",
   "description": "A simple react spinner like iOS UIActivityIndicatorView.",
   "main": "index.js",
   "repository": {
@@ -23,7 +23,7 @@
   "scripts": {
     "build": "npm run v && npm i && rollup -c",
     "v": "npm version patch --force && cd lib && npm version patch --force",
-    "publish": "npm publish lib --access public"
+    "publish": "npm publish --access public"
   },
   "eslintConfig": {
     "extends": [
@@ -44,26 +44,23 @@
     ]
   },
   "devDependencies": {
-    "@babel/cli": "^7.13.14",
-    "@babel/core": "^7.13.14",
-    "@babel/preset-env": "^7.13.12",
+    "@babel/cli": "^7.23.0",
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.22.20",
     "@babel/preset-react": "^7.13.13",
-    "@rollup/plugin-babel": "^5.3.0",
-    "@testing-library/jest-dom": "^5.11.10",
-    "@testing-library/react": "^11.2.6",
-    "@testing-library/user-event": "^12.8.3",
-    "babel-plugin-module-resolver": "^4.1.0",
-    "react-scripts": "4.0.3",
+    "@rollup/plugin-babel": "^6.0.3",
+    "babel-plugin-module-resolver": "^5.0.0",
+    "react-scripts": "5.0.1",
     "rollup": "^2.44.0",
     "rollup-plugin-delete": "^2.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-postcss": "^4.0.0",
-    "postcss": "^8.2.14",
-    "sass": "^1.32.11"
+    "rollup-plugin-postcss": "^4.0.2",
+    "postcss": "^8.4.31",
+    "sass": "^1.68.0"
   },
   "peerDependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "prop-types": "^15.7.2"
+    "react": ">=17.0.2",
+    "react-dom": ">=17.0.2",
+    "prop-types": ">=15.7.2"
   }
 }
